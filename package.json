@@ -1,0 +1,44 @@
+{
+  "name": "draftforge",
+  "version": "0.3.0",
+  "description": "Local-first tool for preparing social carousel draft packs from photos, videos, and optional music. Draft-only: never publishes or schedules.",
+  "main": "scripts/draftforge/index.js",
+  "bin": {
+    "draftforge": "scripts/draftforge/index.js"
+  },
+  "scripts": {
+    "test:draftforge": "node --test tests/draftforge-manifest-contract.test.js tests/draftforge-source-providers.test.js tests/draftforge-render-cards.test.js tests/draftforge-audio-modes.test.js tests/draftforge-pack-output.test.js tests/draftforge-mbs-safety.test.js tests/draftforge-config.test.js tests/draftforge-doctor.test.js tests/draftforge-package-boundary.test.js tests/draftforge-skill-install.test.js",
+    "draftforge": "node scripts/draftforge/index.js",
+    "draftforge:prepare": "node scripts/draftforge/prepare.js",
+    "draftforge:handoff": "node scripts/draftforge/handoff.js"
+  },
+  "keywords": [
+    "social",
+    "instagram",
+    "carousel",
+    "draft",
+    "video",
+    "ffmpeg",
+    "local-first"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrobertsinthelobby/draftforge"
+  },
+  "license": "MIT",
+  "files": [
+    "scripts/draftforge",
+    "docs/draftforge",
+    "README-draftforge.md",
+    "CHANGELOG-draftforge.md",
+    "tests/draftforge-*.test.js",
+    "tests/fixtures/draftforge"
+  ],
+  "dependencies": {
+    "chrome-remote-interface": "^0.34.0",
+    "glob": "^13.0.6",
+    "minimatch": "^10.2.4",
+    "playwright-core": "^1.59.1",
+    "sharp": "^0.34.5"
+  }
+}
