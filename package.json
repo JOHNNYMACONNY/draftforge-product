@@ -31,7 +31,8 @@
     "docs/draftforge",
     "README-draftforge.md",
     "CHANGELOG-draftforge.md",
-    "tests/draftforge-*.test.js"
+    "tests/draftforge-*.test.js",
+    "lib"
   ],
   "dependencies": {
     "chrome-remote-interface": "^0.34.0",
