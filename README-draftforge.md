@@ -15,7 +15,7 @@ The product is usable. Config-driven onboarding works. Audio modes work. CLI is 
 npm install
 
 # Or clone and link:
-git clone https://github.com/jrobertsinthelobby/draftforge
+git clone https://github.com/JOHNNYMACONNY/draftforge-product
 cd draftforge
 node scripts/draftforge/index.js --help
 ```
