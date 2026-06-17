@@ -1,6 +1,6 @@
 # DraftForge
 
-DraftForge prepares local photos, videos, and optional music into review-ready social carousel drafts, with optional guarded Meta Business Suite draft assist.
+DraftForge prepares local photos, videos, and optional music into review-ready social carousel drafts. It automatically creates drafts in Meta Business Suite, which generates drafts for both Facebook and Instagram.
 
 It is **not** an Instagram bot. It does not publish. It does not schedule. The core workflow is local-first and works without a social login.
 
