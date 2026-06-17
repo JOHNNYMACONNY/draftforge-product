@@ -17,7 +17,7 @@ npm install
 # Or clone and link:
 git clone https://github.com/JOHNNYMACONNY/draftforge-product
 cd draftforge
-node scripts/draftforge/index.js --help
+node draftforge/index.js --help
 ```
 
 ## Onboarding
@@ -25,7 +25,7 @@ node scripts/draftforge/index.js --help
 Create a local config file with placeholders for your media, music, and Meta Business Suite draft settings:
 
 ```bash
-node scripts/draftforge/index.js init --out ./draftforge.config.json
+node draftforge/index.js init --out ./draftforge.config.json
 ```
 
 The generated config contains no account IDs, tokens, cookies, or passwords. Fill in only what you need. Meta Business Suite settings are optional unless you use guarded draft assist.
@@ -33,7 +33,7 @@ The generated config contains no account IDs, tokens, cookies, or passwords. Fil
 Check your setup before rendering:
 
 ```bash
-node scripts/draftforge/index.js doctor --config ./draftforge.config.json
+node draftforge/index.js doctor --config ./draftforge.config.json
 ```
 
 ## What It Does
@@ -58,9 +58,9 @@ node scripts/draftforge/index.js doctor --config ./draftforge.config.json
 ## Quick Start: Folder Source, No Audio
 
 ```bash
-node scripts/draftforge/index.js init --out ./draftforge.config.json
-node scripts/draftforge/index.js doctor --config ./draftforge.config.json
-node scripts/draftforge/index.js prepare \
+node draftforge/index.js init --out ./draftforge.config.json
+node draftforge/index.js doctor --config ./draftforge.config.json
+node draftforge/index.js prepare \
   --config ./draftforge.config.json \
   --count 6 \
   --out ./draftforge-pack
@@ -76,7 +76,7 @@ Open:
 ## Draft-Only MBS Safety Check
 
 ```bash
-node scripts/draftforge/index.js mbs-draft \
+node draftforge/index.js mbs-draft \
   --manifest ./draftforge-pack/manifest.json \
   --config ./draftforge.config.json \
   --dry-run
@@ -85,7 +85,7 @@ node scripts/draftforge/index.js mbs-draft \
 ## Manual Handoff Zip
 
 ```bash
-node scripts/draftforge/index.js handoff \
+node draftforge/index.js handoff \
   --pack ./draftforge-pack \
   --out ./draftforge-handoff.zip
 ```
@@ -93,7 +93,7 @@ node scripts/draftforge/index.js handoff \
 Live mutation requires explicit approval:
 
 ```bash
-node scripts/draftforge/index.js mbs-draft \
+node draftforge/index.js mbs-draft \
   --manifest ./draftforge-pack/manifest.json \
   --allow-live-mutation
 ```
