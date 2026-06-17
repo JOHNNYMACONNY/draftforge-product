@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 
-const SOURCE_SKILL_PATH = path.join(__dirname, '..', 'SKILL.md');
+const SOURCE_SKILL_PATH = path.join(__dirname, 'skills', 'social-media', 'social-draft-operator', 'SKILL.md');
 
 function parseArgs(argv) {
   const args = {};
