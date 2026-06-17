@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "files": [
-    "scripts/draftforge",
+    "draftforge",
     "docs/draftforge",
     "README-draftforge.md",
     "CHANGELOG-draftforge.md",
